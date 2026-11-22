@@ -33,7 +33,7 @@ The measurement does **not** mean all audible artifacts are removed, and results
 
 ## Installation and safety
 
-When the **SD install ZIP** is available on [GitHub Releases](https://github.com/odeo0/usb-declick-mpc-sample/releases), download it and follow the [installation guide](INSTALL.md).
+See the [GitHub release page](https://github.com/odeo0/usb-declick-mpc-sample/releases/tag/v0.1.0-beta.1) for the SD install ZIP and follow the [installation guide](https://github.com/odeo0/usb-declick-mpc-sample/blob/main/INSTALL.md).
 
 The repair is experimental. Some clicks can remain; **ON** may also alter genuine sharp musical transients. Use **OFF** when repair is not needed. There is **no on-screen toggle** yet: change the mode file and reboot. Do not merge this installation with other autorun modifications.
 

@@ -11,6 +11,8 @@ This first public beta candidate was renamed from internal build v0.9.4. A teste
 
 ## Install and select a mode
 
+Get the SD install ZIP from the [GitHub release page](https://github.com/odeo0/usb-declick-mpc-sample/releases/tag/v0.1.0-beta.1).
+
 1. Extract the SD install ZIP and copy the `autorun` folder to the root of the SD card.
 2. Open `autorun/USB_DECLICK_MODE.txt`. The package defaults to `ON`, which enables repair. To disable the mod, replace `ON` with `OFF` and save the file before booting. With `OFF`, the MPC application starts without modification.
 3. Power on the MPC with the phone disconnected. In `ON` mode, the monochrome `USB DECLICK / ON` splash screen appears and the MPC application may restart once.
