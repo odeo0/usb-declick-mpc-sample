@@ -64,7 +64,7 @@ USB DeClick does **not** repair USB packets or change clock negotiation. It miti
 5. An affected frame is replaced by an interpolated value, approximately the midpoint of the preceding and following frame in each channel. The core requires **one-frame lookahead** (about 22.7 microseconds at 44.1 kHz). State is reset when ALSA capture is prepared again.
 6. `OFF` before startup skips injection; when a loaded instance is bypassed, samples pass through unchanged. The documented and safest toggle is **edit the mode file and reboot between recordings**.
 
-The implementation is in [`../src/pcmfix_core.c`](../src/pcmfix_core.c) and [`../src/pcmfix_alsa.c`](../src/pcmfix_alsa.c). The algorithm uses fixed-size state; it does **not** accumulate the full recording in memory. Optional SD diagnostics are written by a separate worker rather than the PCM callback. **Device CPU, RAM, XRUN and thermal impact remain unmeasured**.
+The DSP implementation is in [`src/pcmfix_core.c`](../src/pcmfix_core.c). The algorithm uses fixed-size state; it does **not** accumulate the full recording in memory. Optional SD diagnostics are written by a separate worker rather than the PCM callback. **Device CPU, RAM, XRUN and thermal impact remain unmeasured**.
 
 ### Why automatic phase tracking still exists in explicit ON mode
 

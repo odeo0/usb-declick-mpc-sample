@@ -46,7 +46,7 @@ These counts are algorithmic measurements, not a guarantee of inaudible audio, c
 
 1. Back up any important projects, switch off the MPC, and disconnect the USB source.
 2. On a **test SD card**, remove any existing `autorun` directory. Do not merge this mod with another autorun package.
-3. Download the **SD install ZIP** from the release and copy its `autorun` folder to the root of the SD card.
+3. When the **SD install ZIP** is available on [GitHub Releases](https://github.com/odeo0/usb-declick-mpc-sample/releases), download it and copy its `autorun` folder to the root of the SD card.
 4. Open `autorun/USB_DECLICK_MODE.txt` and set it to `ON` (repair) or `OFF` (no modification at startup). `ON` is the default in the beta package.
 5. Insert the card and power on the MPC with the phone disconnected. If repair is enabled, the MPC application may restart once during initialization; wait until the normal interface is ready before connecting the phone.
 6. Make a short test recording before using the mod for important work.
@@ -55,7 +55,7 @@ These counts are algorithmic measurements, not a guarantee of inaudible audio, c
 
 **To uninstall or recover:** power off completely, remove the mod SD card, and boot normally. USB DeClick does **not** flash or permanently replace internal firmware.
 
-A more detailed setup guide is available in [INSTALL_RU.md](INSTALL_RU.md) (Russian).
+See the [installation guide](INSTALL.md) for mode switching, diagnostics, and a recommended recording test.
 
 ## Compatibility and limitations
 
@@ -70,7 +70,7 @@ A more detailed setup guide is available in [INSTALL_RU.md](INSTALL_RU.md) (Russ
 
 ## Research, source code, and testing
 
-The repository provides the [DSP source](src/pcmfix_core.c), [ALSA integration](src/pcmfix_alsa.c), [research findings](docs/research-findings.md), [testing methodology](docs/testing-method.md), and [device compatibility notes](docs/compatibility.md). Developers are welcome to reproduce the measurements, inspect the algorithm, and investigate the original USB audio problem.
+The repository provides the [DSP source](src/pcmfix_core.c), [research findings](docs/research-findings.md), [testing methodology](docs/testing-method.md), and [device compatibility notes](docs/compatibility.md). Developers are welcome to reproduce the measurements, inspect the algorithm, and investigate the original USB audio problem.
 
 To compile and run the included host-side tests, use the documented build environment and:
 
@@ -83,4 +83,4 @@ To report results, open a GitHub issue using the [test report template](docs/com
 
 ## License
 
-Original USB DeClick source code is available under the [MIT License](LICENSE). The patch includes no proprietary Akai application binary.
+Original USB DeClick source code is available under the MIT License. The patch includes no proprietary Akai application binary.
