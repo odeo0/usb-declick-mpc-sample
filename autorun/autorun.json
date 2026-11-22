@@ -1,0 +1,14 @@
+{
+  "value0": {
+    "scripts": [
+      {
+        "path": "autorun.sh",
+        "askQuestion": false,
+        "message": "USB DeClick v0.1.0 beta.1 (experimental)",
+        "yesButtonText": "Start",
+        "noButtonText": "Cancel"
+      }
+    ],
+    "files": []
+  }
+}

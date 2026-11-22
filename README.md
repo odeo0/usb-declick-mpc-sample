@@ -72,10 +72,11 @@ See the [installation guide](INSTALL.md) for mode switching, diagnostics, and a 
 
 The repository provides the [DSP source](src/pcmfix_core.c), [research findings](docs/research-findings.md), [testing methodology](docs/testing-method.md), and [device compatibility notes](docs/compatibility.md). Developers are welcome to reproduce the measurements, inspect the algorithm, and investigate the original USB audio problem.
 
-To compile and run the included host-side tests, use the documented build environment and:
+The [v0.9.2 ALSA adapter source](src/reference-v092/pcmfix_alsa.c) is provided as a reference. The checked-in SD payload comes from v0.9.4. See [build provenance](BUILD_PROVENANCE.md) for details on source availability and verification.
+
+On a host with a C compiler, Python 3, and a POSIX shell, run the core test and verify the checked-in payload with:
 
 ```sh
-sh tools/build.sh
 sh tools/test.sh
 ```
 

@@ -1,0 +1,3 @@
+/autorun/** -text
+/autorun/*.so binary
+/autorun/*.raw binary
